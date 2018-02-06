@@ -2,12 +2,22 @@
 // random post: https://en.wikipedia.org/wiki/Special:Random
 // link to post by id https://en.wikipedia.org/?curid=
 
-function wikiSearch(){
-  var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=peanuts&format=json"
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", url);
-  xhr.send();
-  xhr.onload = function handleResponse(){
-    console.log(xhr.responseText)
+function wikiSearch(topic){
+  var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + topic + "&format=json&callback=callback";
+  jsonpRequest(url);
+}
+
+function handleJSONP(data){
+  //console.log(data.query.search)
+  console.log(data.query.search.length + " Results");
+  for (var i = 0; i < data.query.search.length; i++){
+    var pointer = data.query.search[i];
+    console.log(generateWikiLink(pointer.pageid));
+    console.log(pointer.snippet);
   }
+}
+
+function generateWikiLink(id){
+  var url = "https://en.wikipedia.org/?curid=" + id;
+  return url
 }
