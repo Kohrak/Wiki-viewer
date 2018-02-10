@@ -1,0 +1,10 @@
+.wiki-result {
+  padding-left: 20px;
+  font-family: 'Lato', sans-serif;
+  border-style: solid;
+  border-color: #9A8DE8;
+  border-width: 2px;
+  background-color: #A8B3FF;
+  text-decoration: none;
+  color: black;
+}

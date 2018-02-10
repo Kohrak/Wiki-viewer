@@ -13,6 +13,7 @@ function handleJSONP(data){
   for (var i = 0; i < data.query.search.length; i++){
     var pointer = data.query.search[i];
     console.log(generateWikiLink(pointer.pageid));
+    console.log(pointer.title)
     console.log(pointer.snippet);
   }
 }
