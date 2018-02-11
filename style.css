@@ -19,3 +19,7 @@
 body {
   background-color: #8DB0E8;
 }
+
+.container a{
+  color: inherit; /* blue colors for links too */
+}
