@@ -11,6 +11,11 @@
   margin: 20px;
 }
 
+.wiki-result a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 body {
   background-color: #8DB0E8;
 }
