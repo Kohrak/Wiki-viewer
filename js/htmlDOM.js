@@ -5,3 +5,9 @@ function addResult(title, snippet, link){
   element.innerHTML = "<h3>" + title + "</h3>" + "<p>" + snippet + "</p>";
   document.body.appendChild(element);
 }
+document.getElementById("inputTopic").addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+      wikiSearch();
+    }
+  });

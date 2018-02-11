@@ -2,7 +2,8 @@
 // random post: https://en.wikipedia.org/wiki/Special:Random
 // link to post by id https://en.wikipedia.org/?curid=
 
-function wikiSearch(topic){
+function wikiSearch(){
+  var topic = document.getElementById("inputTopic").value
   var url = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + topic + "&format=json&callback=callback";
   jsonpRequest(url);
 }
