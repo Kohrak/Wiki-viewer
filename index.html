@@ -4,10 +4,18 @@
     <meta charset="utf-8">
     <title>Wiki viewer By Kohrak</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <input type="search" id="inputTopic">
+    <nav class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <a class="navbar-brand em-text" href="#">Wiki search app</a>
+      </div>
+    </nav>
+    <div class="container">
+      <input type="search" id="inputTopic" class="form-control" placeholder="Type a topic to search">
+    </div>
   </body>
   <script  src="js/htmlDOM.js"></script>
   <script  src="js/jsonpModule.js"></script>
