@@ -15,6 +15,7 @@ function handleJSONP(data){
     console.log(generateWikiLink(pointer.pageid));
     console.log(pointer.title)
     console.log(pointer.snippet);
+    addResult(pointer.title, pointer.snippet, generateWikiLink(pointer.pageid));
   }
 }
 
