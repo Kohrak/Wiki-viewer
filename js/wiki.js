@@ -9,8 +9,10 @@ function wikiSearch(){
 }
 
 function handleJSONP(data){
+  cleanResults();
   //console.log(data.query.search)
   console.log(data.query.search.length + " Results");
+  addResultsSection();
   for (var i = 0; i < data.query.search.length; i++){
     var pointer = data.query.search[i];
     addResult(pointer.title, pointer.snippet, generateWikiLink(pointer.pageid));

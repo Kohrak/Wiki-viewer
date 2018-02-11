@@ -1,6 +1,5 @@
 .wiki-result {
   padding-left: 20px;
-  font-family: 'Lato', sans-serif;
   border-style: solid;
   border-color: #9A8DE8;
   border-width: 2px;
@@ -18,8 +17,13 @@
 
 body {
   background-color: #8DB0E8;
+  font-family: 'Lato', sans-serif;
 }
 
 .container a{
   color: inherit; /* blue colors for links too */
+}
+
+.container p{
+  margin-top: 5px;
 }
